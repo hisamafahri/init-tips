@@ -2,10 +2,27 @@
   "name": "init-tips",
   "version": "0.1.0",
   "description": "Start a new project in a better way",
-  "main": "index.js",
-  "repository": "https://github.com/hisamafahri/init-tips",
   "author": "Hisam Fahri",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "next",
+    "next.js",
+    "tailwindcss",
+    "react-query",
+    "prisma",
+    "trpc",
+    "plausible",
+    "nextauth",
+    "vercel",
+    "planetscale",
+    "railway",
+    "zustand",
+    "jutai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisamafahri/init-tips"
+  },
   "devDependencies": {}
 }
