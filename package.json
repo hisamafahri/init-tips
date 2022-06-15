@@ -1,0 +1,11 @@
+{
+  "name": "init-tips",
+  "version": "0.1.0",
+  "description": "Start a new project in a better way",
+  "main": "index.js",
+  "repository": "https://github.com/hisamafahri/init-tips",
+  "author": "Hisam Fahri",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {}
+}
