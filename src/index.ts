@@ -4,13 +4,14 @@ import execCmd from "../utils/exec";
 import { isDirExist } from "../utils/check";
 
 const LANGUAGES = ["Typescript", "Javascript"];
+const STYLING = ["Vanilla CSS", "TailwindCSS"];
 
 inquirer
     .prompt([
         {
             type: "input",
             name: "project_name",
-            message: "What is the project name?",
+            message: "Project name?",
             validate(value) {
                 return Boolean(value.trim())
                     ? true
@@ -19,15 +20,19 @@ inquirer
         },
         {
             type: "list",
+            name: "styling",
+            message: "Styling?",
+            choices: STYLING,
+        },
+        {
+            type: "list",
             name: "language",
-            message: "Which language do you use?",
+            message: "Language?",
             choices: LANGUAGES,
         },
     ])
     .then((answers) => {
-        // TODO:
-        // - Silent command execution
-        // - Custom command output
+        // TODO: Silent command execution
 
         // Check if directory already exist
         if (isDirExist(answers.project_name)) {
